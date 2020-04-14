@@ -1,0 +1,144 @@
+.destinations {
+  width: 1170px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.destinations__wrapper {
+  width: 336px;
+  margin-bottom: 40px;
+}
+
+.destinations__header {
+  position: relative;
+  font-family: "Montserrat", "Verdana", sans-serif;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 80px;
+  letter-spacing: -1.245px;
+  color: #2C2E3F;
+  margin-bottom: 64px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 228.51px;
+    height: 4px;
+    background-color: #FE7865;
+    bottom: -32px;
+    left: 0;
+  }
+}
+
+.destinations__about {
+  font-family: "Montserrat", "Verdana", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.466667px;
+  color: rgba(44, 46, 63, 0.7);
+}
+
+.destinations__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  // justify-content: space-between;
+  // // justify-content: center;
+  padding: 0;
+  margin: 0;
+
+}
+
+
+
+.destinations__item a {
+  position: relative;
+  display: block;
+
+  &:hover {
+    z-index: 3;
+    background-color: rgba(20, 21, 23, 0.6);
+  }
+}
+
+.destinations__text {
+  font-family: "Montserrat", "Verdana", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: -0.415px;
+  color: #2C2E3F;
+
+  position: absolute;
+  bottom: 3px;
+  left: 68px;
+  width: 215px;
+  height: 44px;
+  background-color: #ffffff;
+  text-align: center;
+
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+  padding-top: 17px;
+}
+
+.destinations__item {
+  margin-right: 60px;
+  position: relative;
+  margin-bottom: 97px;
+}
+
+.destinations__list .destinations__item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.destinations__list .destinations__item:nth-child(4) {
+  margin-left: 175px;
+  margin-right: 121px;
+}
+
+.destination__hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 350px;
+  height: 279px;
+  background-color: rgba(20, 21, 23, 0.6);
+  padding-top: 152px;
+  align-items: center;
+  z-index: 10;
+}
+
+.destination__hover {
+  display: none;
+}
+
+.destinations__item:hover .destinations__text {
+  z-index: 10;
+}
+
+.destinations__item:hover .destination__hover {
+  display: block;
+}
+
+.destinations__button {
+  font-family: "Montserrat", "Verdana", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  width: 264px;
+  border: 1px solid #ffffff;
+  padding-top: 29px;
+  padding-bottom: 29px;
+  margin: 0 auto;
+}
