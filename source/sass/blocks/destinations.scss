@@ -18,7 +18,7 @@
   font-size: 55px;
   line-height: 80px;
   letter-spacing: -1.245px;
-  color: #2C2E3F;
+  color: #2c2e3f;
   margin-bottom: 64px;
 
   &::after {
@@ -26,7 +26,7 @@
     content: "";
     width: 228.51px;
     height: 4px;
-    background-color: #FE7865;
+    background-color: #fe7865;
     bottom: -32px;
     left: 0;
   }
@@ -45,14 +45,11 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  // justify-content: space-between;
-  // // justify-content: center;
+  justify-content: center;
+  align-items: center;
   padding: 0;
   margin: 0;
-
 }
-
-
 
 .destinations__item a {
   position: relative;
@@ -71,10 +68,10 @@
   font-size: 24px;
   line-height: 29px;
   letter-spacing: -0.415px;
-  color: #2C2E3F;
+  color: #2c2e3f;
 
   position: absolute;
-  bottom: 3px;
+  bottom: -1px;
   left: 68px;
   width: 215px;
   height: 44px;
@@ -87,22 +84,44 @@
   padding-top: 17px;
 }
 
+.destinations__greece {
+  background: no-repeat url("../img/greece-desktop.jpg");
+  width: 350px;
+  height: 430px;
+}
+
+.destinations__albania {
+  background: no-repeat url("../img/albania-desktop.jpg");
+  width: 350px;
+  height: 430px;
+}
+
+.destinations__makedonia {
+  background: no-repeat url("../img/makedonia-desktop.jpg");
+  width: 350px;
+  height: 430px;
+}
+
+.destinations__montenegro {
+  background: no-repeat url("../img/montenegro-desktop.jpg");
+  width: 350px;
+  height: 430px;
+}
+
+.destinations__horvatia {
+  background: no-repeat url("../img/horvatia-desktop.jpg");
+  width: 350px;
+  height: 430px;
+}
+
 .destinations__item {
-  margin-right: 60px;
+  margin-right: 40px;
   position: relative;
   margin-bottom: 97px;
 }
 
-.destinations__list .destinations__item:nth-child(3n) {
-  margin-right: 0;
-}
-
-.destinations__list .destinations__item:nth-child(4) {
-  margin-left: 175px;
-  margin-right: 121px;
-}
-
 .destination__hover {
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -112,10 +131,6 @@
   padding-top: 152px;
   align-items: center;
   z-index: 10;
-}
-
-.destination__hover {
-  display: none;
 }
 
 .destinations__item:hover .destinations__text {
@@ -141,4 +156,88 @@
   padding-top: 29px;
   padding-bottom: 29px;
   margin: 0 auto;
+}
+
+@media (max-width: 1023px) {
+  .destinations {
+    min-width: 768px;
+    width: auto;
+    padding: 0;
+    margin-bottom: 91px;
+  }
+
+  .destinations__header {
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: 0;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .destinations__about {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .destinations__wrapper {
+    width: 355px;
+    margin: 0 auto;
+    padding-top: 80px;
+    margin-bottom: 40px;
+  }
+
+  .destinations__item {
+    margin-right: 30px;
+    margin-bottom: 20px;
+  }
+
+  .destinations__item:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .destinations__greece {
+    background: no-repeat url("../img/greece-tablet.jpg");
+    width: 288px;
+    height: 425px;
+  }
+
+  .destinations__albania {
+    background: no-repeat url("../img/albania-tablet.jpg");
+    width: 288px;
+    height: 425px;
+  }
+
+  .destinations__makedonia {
+    background: no-repeat url("../img/makedonia-tablet.jpg");
+    width: 288px;
+    height: 425px;
+  }
+
+  .destinations__montenegro {
+    background: no-repeat url("../img/montenegro-tablet.jpg");
+    width: 288px;
+    height: 425px;
+  }
+
+  .destinations__horvatia {
+    background: no-repeat url("../img/horvatia-tablet.jpg");
+    width: 288px;
+    height: 425px;
+  }
+
+  .destination__hover {
+    width: 288px;
+    height: 274px;
+  }
+
+  .destinations__text {
+    left: 37px;
+  }
 }

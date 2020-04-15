@@ -1,5 +1,3 @@
-@media (min-width: 1024px) {}
-
 .header {
   width: 1182px;
   display: flex;
@@ -19,9 +17,8 @@
 
 .main-nav {
   margin: 0;
-  padding: 0em;
-  width: 500px;
-  // margin-right: 23px;
+  padding: 0;
+  min-width: 500px;
 }
 
 .main-nav__list {
@@ -29,7 +26,6 @@
   font-size: 14px;
   line-height: 17px;
   font-weight: 500;
-
 
   display: flex;
   list-style: none;
@@ -44,7 +40,7 @@
   margin-right: 10px;
 
   &:hover {
-    color: #FE7865;
+    color: #fe7865;
   }
 }
 
@@ -52,9 +48,8 @@
   color: #141517;
 
   &:hover {
-    color: #FE7865;
+    color: #fe7865;
   }
-
 }
 
 .main-nav__phone a {
@@ -63,7 +58,7 @@
   font-size: 18px;
   line-height: 32px;
   font-weight: 400;
-  color: #FE7865;
+  color: #fe7865;
   text-align: right;
   margin-right: 26px;
   padding-left: 60px;
@@ -85,5 +80,55 @@
 
   &:hover::before {
     background: no-repeat url("/img/phone-icon-gray.svg");
+  }
+}
+
+.toggle-nav {
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  .header {
+    position: relative;
+    width: auto;
+    padding: 10px 0 14px 21px;
+    margin-bottom: 0;
+    box-sizing: border-box;
+  }
+
+  .toggle-nav {
+    position: absolute;
+    display: block;
+    order: 3;
+    cursor: pointer;
+    border: 0;
+    width: 72px;
+    height: 50px;
+    background-color: #fe7865;
+    top: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background: no-repeat url("../img/Menu.svg");
+      width: 30px;
+      height: 30px;
+      top: 10px;
+      right: 21px;
+    }
+  }
+
+  .main-nav__phone a {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 500;
+  }
+
+  .main-nav {
+    min-width: 500px;
+    padding-right: 72px;
   }
 }

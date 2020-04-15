@@ -15,11 +15,10 @@
     position: absolute;
     width: 1443.66px;
     height: 1088.9px;
-    background: no-repeat url(../img/map.png);
+    background: no-repeat url("../img/map.png");
     top: 139px;
     left: -138px;
   }
-
 }
 
 .tabs__list {
@@ -28,7 +27,6 @@
   list-style: none;
   margin: 0;
   padding: 0;
-
   display: flex;
   justify-content: space-between;
 
@@ -54,7 +52,7 @@
 }
 
 .county-list__item--active {
-  color: #FE7865;
+  color: #fe7865;
 }
 
 .tabs-info {
@@ -72,7 +70,7 @@
   &::before {
     content: "";
     position: absolute;
-    background: no-repeat url(../img/greece-review-desktop.jpg);
+    background: no-repeat url("../img/greece-review-desktop.jpg");
     background-size: cover;
     width: 430px;
     height: 596px;
@@ -89,11 +87,11 @@
   width: 250px;
   padding-left: 39px;
   padding-right: 39px;
+  border: none;
 }
 
 .tabs-info__about {
   width: 380px;
-
 }
 
 .tabs-info__header {
@@ -104,7 +102,7 @@
   font-size: 55px;
   line-height: 90px;
   letter-spacing: -1.245px;
-  color: #2C2E3F;
+  color: #2c2e3f;
   margin: 0;
   padding: 0;
   margin-bottom: 47px;
@@ -114,7 +112,7 @@
     content: "";
     width: 175px;
     height: 2.92px;
-    background-color: #FE7865;
+    background-color: #fe7865;
     bottom: -16px;
     left: 0;
   }
@@ -153,7 +151,7 @@
   font-size: 30px;
   line-height: 37px;
   letter-spacing: -0.691667px;
-  color: #2C2E3F;
+  color: #2c2e3f;
   margin: 0;
   padding: 0;
   margin-bottom: 35px;
@@ -163,10 +161,9 @@
     content: "";
     width: 68px;
     height: 0.73px;
-    background-color: #FE7865;
+    background-color: #fe7865;
     bottom: -14px;
     left: 0;
-
   }
 }
 
@@ -191,7 +188,7 @@
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.466667px;
-  color: #2C2E3F;
+  color: #2c2e3f;
   margin: 0;
   padding: 0;
   padding-left: 52px;
@@ -204,4 +201,90 @@
   height: 38px;
   top: -8px;
   left: 0;
+}
+
+@media (max-width: 1023px) {
+  .tabs {
+    min-width: 768px;
+    width: auto;
+    padding: 0;
+    margin-bottom: 15px;
+  }
+
+  .tabs__nav {
+    padding-left: 37px;
+    padding-right: 25px;
+    margin-bottom: 48px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .tabs__list {
+    width: auto;
+
+    &::after {
+      width: 100%;
+    }
+  }
+
+  .county-list__item--hide {
+    display: none;
+  }
+
+  .tabs-info__header {
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: 0;
+    text-align: center;
+    margin-bottom: 21px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .tabs-info__text {
+    text-align: center;
+    margin-bottom: 19px;
+  }
+
+  .tabs-info__item {
+    flex-direction: column;
+
+
+    &::before {
+      position: absolute;
+      background: no-repeat url("../img/greece-review-tablet.jpg");
+      background-size: cover;
+      width: 768px;
+      height: 415px;
+      top: 332px;
+      margin: 0 auto;
+      right: 0;
+      left: 0;
+    }
+  }
+
+  .tabs-info__about {
+    width: auto;
+    margin: 0 auto;
+    padding-left: 21px;
+    padding-right: 21px;
+  }
+
+  .tabs__button {
+    height: 50px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    padding: 19px 50px;
+    margin: 0 auto;
+  }
+
+  .tabs__review {
+    margin: 0 auto;
+    margin-top: 110px;
+  }
 }

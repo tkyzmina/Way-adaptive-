@@ -1,7 +1,6 @@
 .first-screen {
-  // width: 100vw;
   position: relative;
-  background-color: #95BDE2;
+  background-color: #95bde2;
   height: 860px;
   color: #ffffff;
   margin-bottom: 155px;
@@ -9,7 +8,7 @@
   &::before {
     content: "";
     position: absolute;
-    background: center no-repeat url(../img/first-screen-desktop.jpg);
+    background: center no-repeat url("../img/first-screen-desktop.jpg");
     top: 0;
     left: 0%;
     width: 100%;
@@ -62,5 +61,62 @@
     right: 25px;
     width: 30px;
     height: 30px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .first-screen {
+    height: 344px;
+    width: auto;
+    margin: 0;
+
+    &::before {
+      background: center no-repeat url("../img/first-screen-tablet.jpg");
+    }
+  }
+
+  .first-screen__wrapper {
+    min-width: 398px;
+    width: auto;
+  }
+
+  .first-screen__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 415px;
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    top: 60px;
+    right: -2px;
+  }
+
+  .first-screen__header {
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: 0;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+
+  .first-screen__text {
+    text-align: center;
+    margin-bottom: 14px;
+  }
+
+  .first-screen__button {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    width: 250px;
+    height: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    &::after {
+      top: 15px;
+    }
   }
 }

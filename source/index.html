@@ -13,11 +13,13 @@
   <header class="header">
     <a href="" class="header__logo">
       <picture>
-        <source media="(min-width: 1024px)" srcset="img/logo-desktop.svg">
+        <source media="(max-width: 1023px)" srcset="img/logo-tablet.svg">
         <img class="header__logo-image" src="img/logo-desktop.svg" alt="Логотип WAY" width="57" height="22">
       </picture>
-
     </a>
+    <button class="toggle-nav" type="button">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
     <nav class="main-nav">
       <ul class="main-nav__list">
         <li class="main-nav__about"><a href="#">О путешествии</a></li>
@@ -50,9 +52,9 @@
         <div class="destination__hover">
           <a href="#tabs" class="destinations__button">смотреть подробнее</a>
         </div>
-        <a href="#tabs">
+        <a class="destinations__greece" href=" #tabs">
           <p class="destinations__text">Греция</p>
-          <img src="img/greece-desktop.jpg" width="350" height="430" alt="Изображение пейзаж Греции">
+          <!-- <img src="img/greece-desktop.jpg" width="350" height="430" alt="Изображение пейзаж Греции"> -->
         </a>
       </li>
 
@@ -60,9 +62,9 @@
         <div class="destination__hover">
           <a href="#tabs" class="destinations__button">смотреть подробнее</a>
         </div>
-        <a href="#tabs">
+        <a class="destinations__albania" href="#tabs">
           <p class="destinations__text">Албания</p>
-          <img src="img/albania-desktop.jpg" width="350" height="430" alt="Изображение пейзаж Албании">
+          <!-- <img src="img/albania-desktop.jpg" width="350" height="430" alt="Изображение пейзаж Албании"> -->
         </a>
       </li>
 
@@ -70,9 +72,9 @@
         <div class="destination__hover">
           <a href="#tabs" class="destinations__button">смотреть подробнее</a>
         </div>
-        <a href="#tabs">
+        <a class="destinations__makedonia" href="#tabs">
           <p class="destinations__text">Македония</p>
-          <img src="img/makedonia-desktop.jpg" width="350" height="430" alt="Изображение пейзаж Македонии">
+          <!-- <img src="img/makedonia-desktop.jpg" width="350" height="430" alt="Изображение пейзаж Македонии"> -->
         </a>
       </li>
 
@@ -80,9 +82,9 @@
         <div class="destination__hover">
           <a href="#tabs" class="destinations__button">смотреть подробнее</a>
         </div>
-        <a href="#tabs">
+        <a class="destinations__montenegro" href="#tabs">
           <p class="destinations__text">Черногория</p>
-          <img src="img/montenegro-desktop.jpg" width="350" height="430" alt="Изображение пейзаж Черногории">
+          <!-- <img src="img/montenegro-desktop.jpg" width="350" height="430" alt="Изображение пейзаж Черногории"> -->
         </a>
       </li>
 
@@ -90,9 +92,9 @@
         <div class="destination__hover">
           <a href="#tabs" class="destinations__button">смотреть подробнее</a>
         </div>
-        <a href="#tabs">
+        <a class="destinations__horvatia" href="#tabs">
           <p class="destinations__text">Хорватия</p>
-          <img src="img/horvatia-desktop.jpg" width="350" height="430" alt="Изображение пейзаж Хорватии">
+          <!-- <img src="img/horvatia-desktop.jpg" width="350" height="430" alt="Изображение пейзаж Хорватии"> -->
         </a>
       </li>
 
@@ -107,8 +109,8 @@
         <li class="county-list__item county-list__item--active">Греция</li>
         <li class="county-list__item">Албания</li>
         <li class="county-list__item">Македония</li>
-        <li class="county-list__item">Черногория</li>
-        <li class="county-list__item">Хорватия</li>
+        <li class="county-list__item ">Черногория</li>
+        <li class="county-list__item county-list__item--hide">Хорватия</li>
       </ul>
     </nav>
     <ul class="tabs-info">
@@ -122,7 +124,7 @@
             в
             высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.
           </p>
-          <a href="#" class="tabs__button button">купить тур сейчас</a>
+          <button class="tabs__button button" type="button">купить тур сейчас</button>
         </div>
 
         <div class="tabs__review review">
@@ -242,7 +244,7 @@
           <li class="include__item">Завтраки, ужины в отелях и ланчи на природе</li>
           <li class="include__item">Экскурсии по удивительно красивым местам Европы</li>
         </ul>
-        <button class="button price__button">купить тур сейчас</button>
+        <button class="button price__button" type="button">купить тур сейчас</button>
       </li>
 
       <li class="price__item">
@@ -261,7 +263,7 @@
           <li class="include__item">Только завтраки в отелях</li>
           <li class="include__item">Экскурсии по удивительно красивым местам Европы</li>
         </ul>
-        <button class="button price__button">купить тур сейчас</button>
+        <button class="button price__button" type="button">купить тур сейчас</button>
       </li>
     </ul>
 
@@ -295,7 +297,6 @@
   <footer class="footer">
     <section class="footer__contry other">
       <h3 class="other__header">Следующие путешествия</h3>
-      </header>
       <ul class="footer__list other">
         <li class="other__item"><a href="#">Марсель</a></li>
         <li class="other__item"><a href="#">Ним</a></li>
@@ -328,10 +329,10 @@
     </div>
   </footer>
 
-  <div class="modal">
+  <div class="modal modal__hide">
     <div class="modal__wrapper">
       <h3 class="modal__header">Купить тур </h3>
-      <button class="modal__close"></button>
+      <button class="modal__close" type="button"></button>
       <form class="modal__form" metod="POST" action="https://echo.htmlacademy.ru">
         <label class="modal__label">
           <span class="modal__required">*</span>
@@ -345,6 +346,13 @@
     </div>
   </div>
 
+  <div class="modal-sucсess modal-success__hide">
+    <div class="modal-sucсess__wrapper">
+      <h3 class="modal-sucсess__header">Форма успешно отправлена, спасибо! :)</h3>
+      <button class="modal-sucсess__close" type="button"></button>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
