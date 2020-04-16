@@ -14,36 +14,35 @@
 //   }
 // });
 
-// var buttonByuNow = document.querySelector('.tabs__button');
-// var modal = document.querySelector('.modal');
-// var modalClose = modal.querySelector('.modal__close');
-// var buttonSubmit = modal.querySelector('.modal__button');
-// var successMessage = document.querySelector('.modal-sucсess');
-// var successClose = successMessage.querySelector('.modal-sucсess__close');
+var buttonByuNow = document.querySelector('.tabs__button');
+var modal = document.querySelector('.modal');
+var modalClose = modal.querySelector('.modal__close');
+var buttonSubmit = modal.querySelector('.modal__button');
+var successMessage = document.querySelector('.modal-sucсess');
+var successClose = successMessage.querySelector('.modal-sucсess__close');
 
-// buttonByuNow.addEventListener('click', function () {
-//   modal.classList.toggle('modal__show');
-// });
-// modalClose.addEventListener('click', function () {
-//   modal.classList.remove('modal__show');
-// });
-// buttonSubmit.addEventListener('click', function (evt) {
-//   evt.preventDefault();
-//   modal.classList.remove('modal__show');
-//   successMessage.classList.remove('modal-success__hide');
-//   successMessage.classList.add('modal-success__show');
-// });
-// var closeSuccessMessage = function () {
-//   successMessage.classList.remove('modal-success__show');
-//   successMessage.classList.add('modal-success__hide');
-// };
+buttonByuNow.addEventListener('click', function () {
+  modal.classList.toggle('modal__show');
+});
+modalClose.addEventListener('click', function () {
+  modal.classList.remove('modal__show');
+});
 
-// successClose.addEventListener('click', closeSuccessMessage);
+buttonSubmit.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  modal.classList.remove('modal__show');
+  successMessage.classList.remove('modal-success__hide');
+  successMessage.classList.add('modal-success__show');
+});
+var closeSuccessMessage = function () {
+  successMessage.classList.remove('modal-success__show');
+  successMessage.classList.add('modal-success__hide');
+};
 
-document.addEventListener('keypress', function (evt) {
-  console.log(evt.code);
-  // var keyCode = evt.keyCode;
-  // if (keyCode == '27') {
-  //   closeSuccessMessage();
-  // }
+successClose.addEventListener('click', closeSuccessMessage);
+
+document.addEventListener('keydown', function (evt) {
+  if (evt.key === 'Escape') {
+    closeSuccessMessage();
+  }
 });

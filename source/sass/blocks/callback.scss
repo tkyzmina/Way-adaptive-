@@ -136,3 +136,46 @@
     margin-bottom: 20px;
   }
 }
+
+@media (max-width: 767px) {
+  .callback {
+    box-sizing: border-box;
+    width: auto;
+    min-width: 320px;
+    min-height: 441px;
+    margin-bottom: 70px;
+
+    &::before {
+      width: 0;
+      height: 0;
+      display: none;
+    }
+  }
+
+  .callback__wrapper {
+    position: relative;
+    top: 0;
+    width: 320px;
+    height: 441px;
+    background-color: #fbf8f8;
+    padding: 50px 14px;
+  }
+
+  .callback__header {
+    margin-bottom: 20px;
+  }
+
+  .callback__text {
+    margin-bottom: 19px;
+  }
+
+  .callback__form input {
+    width: 288px;
+  }
+
+  .callback__button {
+    width: 288px;
+    padding: 19px 103px;
+
+  }
+}

@@ -13,6 +13,7 @@
   <header class="header">
     <a href="" class="header__logo">
       <picture>
+        <source media="(max-width: 767px)" srcset="img/logo-mobile.svg">
         <source media="(max-width: 1023px)" srcset="img/logo-tablet.svg">
         <img class="header__logo-image" src="img/logo-desktop.svg" alt="Логотип WAY" width="57" height="22">
       </picture>
@@ -20,7 +21,9 @@
     <button class="toggle-nav" type="button">
       <span class="visually-hidden">Открыть меню</span>
     </button>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--hide main-nav--nojs">
+      <button class="main-nav__close" type="button"><span class="visually-hidden">Закрыть
+          меню</span></button>
       <ul class="main-nav__list">
         <li class="main-nav__about"><a href="#">О путешествии</a></li>
         <li class="main-nav__price"><a href="#">Цены</a> </li>
@@ -319,7 +322,7 @@
     <section class="footer__contacts contacts">
       <h3 class="footer__header">Наши контакты</h3>
       <a class="contacts__email" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
-      <a class="contacts__tel" href="tel:+749978468446">+7 (499) -784-684-46</a>
+      <a class="contacts__tel" href="tel:+749978468446">+7(499)-784-684-46</a>
     </section>
     <div class="footer__offer offer">
       <h3 class="offer__header">Корпоративные путешествия</h3>

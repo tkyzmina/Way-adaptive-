@@ -120,3 +120,47 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .first-screen {
+    height: 235px;
+    margin-bottom: 228px;
+
+    &::before {
+      min-width: 320px;
+      background: center no-repeat url("../img/first-screen-mobile.jpg");
+    }
+  }
+
+  .first-screen__header {
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    margin-bottom: 103px;
+  }
+
+  .first-screen__wrapper {
+    min-width: 320px;
+    padding: 0;
+  }
+
+  .first-screen__block {
+    position: absolute;
+    width: 294px;
+    height: auto;
+    padding-top: 82px;
+    padding-left: 14px;
+    padding-right: 14px;
+    top: 0;
+    left: 0;
+  }
+
+  .first-screen__text {
+    color: #2c2e3f;
+    margin-bottom: 21px;
+  }
+
+  .first-screen__button {
+    width: 288px;
+  }
+}

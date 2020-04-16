@@ -1,18 +1,24 @@
 'use strict';
-// var pageHeader = document.querySelector('.page-header');
-// var headerToggle = document.querySelector('.page-header__toggle');
+var mainNav = document.querySelector('.main-nav');
+var headerToggle = document.querySelector('.toggle-nav');
+var navClose = document.querySelector('.main-nav__close');
 
-// pageHeader.classList.remove('page-header--nojs');
 
-// headerToggle.addEventListener('click', function () {
-//   if (pageHeader.classList.contains('page-header--closed')) {
-//     pageHeader.classList.remove('page-header--closed');
-//     pageHeader.classList.add('page-header--opened');
-//   } else {
-//     pageHeader.classList.add('page-header--closed');
-//     pageHeader.classList.remove('page-header--opened');
-//   }
-// });
+mainNav.classList.remove('main-nav--nojs');
+
+headerToggle.addEventListener('click', function () {
+  if (mainNav.classList.contains('main-nav--hide')) {
+    mainNav.classList.remove('main-nav--hide');
+    mainNav.classList.add('main-nav--show');
+  } else {
+    mainNav.classList.add('main-nav--hide');
+    mainNav.classList.remove('main-nav--show');
+  }
+});
+navClose.addEventListener('click', function () {
+  mainNav.classList.add('main-nav--hide');
+  mainNav.classList.remove('main-nav--show');
+});
 
 var buttonByuNow = document.querySelector('.tabs__button');
 var modal = document.querySelector('.modal');

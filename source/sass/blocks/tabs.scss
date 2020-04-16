@@ -288,3 +288,81 @@
     margin-top: 110px;
   }
 }
+
+@media (max-width: 767px) {
+  .tabs {
+    min-width: 320px;
+    width: 320px;
+  }
+
+  .tabs__nav {
+    padding-left: 16px;
+    margin-bottom: 42px;
+  }
+
+  .tabs__list {
+    overflow: hidden;
+  }
+
+  .county-list__item {
+    margin-right: 100px;
+  }
+
+  .tabs-info__header {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .tabs-info__about {
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+
+  .tabs__button {
+    font-size: 10px;
+    line-height: 12px;
+    width: 288px;
+    padding: 19px 70px;
+  }
+
+  .tabs-info__item {
+    &::before {
+      top: 570px;
+      background: no-repeat url("/img/greece-review-mobile.jpg");
+    }
+  }
+
+  .tabs__review {
+    width: 268px;
+    height: 431px;
+    margin-top: 99px;
+    padding: 35px 18px 0;
+  }
+
+  .review__hader {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 29px;
+
+    &::after {
+      bottom: -10px;
+      left: 81px;
+    }
+  }
+
+  .review__text {
+    text-align: center;
+  }
+
+  .review__name {
+    padding: 0;
+    padding-top: 26px;
+    text-align: center;
+  }
+
+  .review__avatar {
+    top: -22px;
+    left: 96px;
+  }
+}
