@@ -11,7 +11,7 @@
 
 <body>
   <header class="header">
-    <a href="" class="header__logo">
+    <a class="header__logo">
       <picture>
         <source media="(max-width: 767px)" srcset="img/logo-mobile.svg">
         <source media="(max-width: 1023px)" srcset="img/logo-tablet.svg">
@@ -25,8 +25,8 @@
       <button class="main-nav__close" type="button"><span class="visually-hidden">Закрыть
           меню</span></button>
       <ul class="main-nav__list">
-        <li class="main-nav__about"><a href="#">О путешествии</a></li>
-        <li class="main-nav__price"><a href="#">Цены</a> </li>
+        <li class="main-nav__about"><a href="#about">О путешествии</a></li>
+        <li class="main-nav__price"><a href="#price">Цены</a> </li>
         <li class="main-nav__phone"><a href="tel:+749978468446">+7(499)-784-684-46</a></li>
       </ul>
     </nav>
@@ -52,7 +52,7 @@
     <ul class="destinations__list">
 
       <li class="destinations__item">
-        <div class="destination__hover">
+        <div class="destinations__hover">
           <a href="#tabs" class="destinations__button">смотреть подробнее</a>
         </div>
         <a class="destinations__greece" href=" #tabs">
@@ -62,7 +62,7 @@
       </li>
 
       <li class="destinations__item">
-        <div class="destination__hover">
+        <div class="destinations__hover">
           <a href="#tabs" class="destinations__button">смотреть подробнее</a>
         </div>
         <a class="destinations__albania" href="#tabs">
@@ -72,7 +72,7 @@
       </li>
 
       <li class="destinations__item">
-        <div class="destination__hover">
+        <div class="destinations__hover">
           <a href="#tabs" class="destinations__button">смотреть подробнее</a>
         </div>
         <a class="destinations__makedonia" href="#tabs">
@@ -82,7 +82,7 @@
       </li>
 
       <li class="destinations__item">
-        <div class="destination__hover">
+        <div class="destinations__hover">
           <a href="#tabs" class="destinations__button">смотреть подробнее</a>
         </div>
         <a class="destinations__montenegro" href="#tabs">
@@ -92,7 +92,7 @@
       </li>
 
       <li class="destinations__item">
-        <div class="destination__hover">
+        <div class="destinations__hover">
           <a href="#tabs" class="destinations__button">смотреть подробнее</a>
         </div>
         <a class="destinations__horvatia" href="#tabs">
@@ -100,14 +100,13 @@
           <!-- <img src="img/horvatia-desktop.jpg" width="350" height="430" alt="Изображение пейзаж Хорватии"> -->
         </a>
       </li>
-
     </ul>
   </section>
 
   <section class="tabs">
-    <header class="visually-hidden">О странах подробнее</header>
+    <h2 class="visually-hidden">О странах подробнее</h2>
     <nav class="tabs__nav">
-      <a name="tabs"></a>
+      <a id="tabs"></a>
       <ul class="tabs__list county-list">
         <li class="county-list__item county-list__item--active">Греция</li>
         <li class="county-list__item">Албания</li>
@@ -116,6 +115,7 @@
         <li class="county-list__item county-list__item--hide">Хорватия</li>
       </ul>
     </nav>
+    <a id="about"></a>
     <ul class="tabs-info">
       <li class="tabs-info__item">
         <div class="tabs-info__about">
@@ -129,7 +129,6 @@
           </p>
           <button class="tabs__button button" type="button">купить тур сейчас</button>
         </div>
-
         <div class="tabs__review review">
           <h3 class="review__hader">Отзывы</h3>
           <p class="review__text">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же высоченные
@@ -150,7 +149,6 @@
             мелкого состояния. </p>
           <a href="#" class="tabs__button button">купить тур сейчас</a>
         </div>
-
         <div class="tabs__review review">
           <h3 class="review__hader">Отзывы</h3>
           <p class="review__text">Замечательный курорт, обязательно стоит посетить. В следующий раз возьму с собой
@@ -172,7 +170,6 @@
             Татичев Камен где находится археологический памятник Кокино в длину около 100 метров.</p>
           <a href="#" class="tabs__button button">купить тур сейчас</a>
         </div>
-
         <div class="tabs__review review">
           <h3 class="review__hader">Отзывы</h3>
           <p class="review__text">Я бы сказал необычное старое здание. В архитектуре я не разбираюсь, но подъем в гору
@@ -194,12 +191,10 @@
             80 км.</p>
           <a href="#" class="tabs__button button">купить тур сейчас</a>
         </div>
-
         <div class="tabs__review review">
           <h3 class="review__hader">Отзывы</h3>
           <p class="review__text">Неописуемой красоты каньон! Ничего прекраснее в жизни не видела, разве что в фильмах
             :) Всем советую</p>
-
           <p class="review__name">
             <img class="review__avatar" src="img/avatar-4.jpg" alt="Аватар пользователя">
             Анастасия Мей</p>
@@ -221,13 +216,11 @@
           <p class="review__text">Мы поехали всей семьей, я, моя жена и родители. Пещера просто незабываема! А то, что
             все это формировалось тысячелетиями, мега необычно. Первоначально даже не верилось, но натур ни с чем не
             спутать по итогу :)</p>
-
           <p class="review__name">
             <img class="review__avatar" src="img/avatar-5.jpg" alt="Аватар пользователя">
             Владимир Мулицин</p>
         </div>
       </li>
-
     </ul>
   </section>
 
@@ -235,12 +228,10 @@
     <ul class="price__list">
       <li class="price__item item">
         <div class="item__head">
-          <h3 class="price__header" aria-label="Цены тура Комплексный пакет">Комплексный
-          </h3>
+          <h3 class="price__header">Комплексный</h3>
           <p class="price__usd">$1999</p>
         </div>
         <p class="price__description">Ознакомьтесь с перечнем того, что входит в данный пакет </p>
-
         <ul class="price__include include">
           <li class="include__item">Разработанный маршрут с гидом группы</li>
           <li class="include__item">Перелет, трансфер и проживание в отелях</li>
@@ -249,16 +240,12 @@
         </ul>
         <button class="button price__button" type="button">купить тур сейчас</button>
       </li>
-
-      <li class="price__item">
+      <li class="price__item item">
         <div class="item__head">
-          <h3 class="price__header" aria-label="Цены тура Комплексный пакет">Экономный
-          </h3>
+          <h3 class="price__header">Экономный</h3>
           <p class="price__usd">$1399</p>
         </div>
-
         <p class="price__description">Ознакомьтесь с перечнем того, что входит в данный пакет </p>
-
         <ul class="price__include include">
           <li class="include__item">Разработанный маршрут с гидом группы</li>
           <li class="include__item">Перелет и трансфер</li>
@@ -269,7 +256,7 @@
         <button class="button price__button" type="button">купить тур сейчас</button>
       </li>
     </ul>
-
+    <a id="price"></a>
     <div class="price__wrapper">
       <h3 class="price__price">Цены</h3>
       <p class="price__text">Специально для Вас мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших
@@ -277,14 +264,13 @@
       <p class="price__call">Свяжитесь с нами</p>
       <a class="price__tel" href="tel:+749978468446">+7 (499)-784-684-46</a>
     </div>
-
   </section>
 
   <section class="callback">
     <div class="callback__wrapper">
       <h3 class="callback__header">У Вас остались вопросы?</h3>
       <p class="callback__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
-      <form class="callback__form" metod="POST" action="https://echo.htmlacademy.ru">
+      <form class="callback__form" method="POST" action="https://echo.htmlacademy.ru" name="callback-form">
         <label class="callback__label">
           <span class="callback__required">*</span>
           <input class="callback__mobile" type="tel" name="mobile" placeholder="+7 Введите 10 цифр номера" required="">
@@ -336,7 +322,7 @@
     <div class="modal__wrapper">
       <h3 class="modal__header">Купить тур </h3>
       <button class="modal__close" type="button"></button>
-      <form class="modal__form" metod="POST" action="https://echo.htmlacademy.ru">
+      <form class="modal__form" method="POST" action="https://echo.htmlacademy.ru" name="modal-form">
         <label class="modal__label">
           <span class="modal__required">*</span>
           <input class="modal__mobile" type="tel" name="mobile" placeholder="+7 Введите 10 цифр номера" required="">
@@ -349,12 +335,13 @@
     </div>
   </div>
 
-  <div class="modal-sucсess modal-success__hide">
+  <div class="modal-sucсess modal-success--hide">
     <div class="modal-sucсess__wrapper">
       <h3 class="modal-sucсess__header">Форма успешно отправлена, спасибо! :)</h3>
       <button class="modal-sucсess__close" type="button"></button>
     </div>
   </div>
+
   <script src="js/script.js"></script>
 </body>
 

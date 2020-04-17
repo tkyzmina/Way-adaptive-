@@ -120,7 +120,7 @@
   margin-bottom: 97px;
 }
 
-.destination__hover {
+.destinations__hover {
   display: none;
   position: absolute;
   top: 0;
@@ -137,7 +137,7 @@
   z-index: 10;
 }
 
-.destinations__item:hover .destination__hover {
+.destinations__item:hover .destinations__hover {
   display: block;
 }
 
@@ -232,7 +232,7 @@
     height: 425px;
   }
 
-  .destination__hover {
+  .destinations__hover {
     width: 288px;
     height: 274px;
   }
