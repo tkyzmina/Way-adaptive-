@@ -27,6 +27,7 @@ gulp.task("css", function () {
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("docs/css"))
     .pipe(server.stream());
 });
 
@@ -62,7 +63,8 @@ gulp.task("images", function () {
       imagemin.svgo()
     ]))
 
-    .pipe(gulp.dest("source/img"));
+    .pipe(gulp.dest("source/img"))
+    .pipe(gulp.dest("docs/img"));
 
 });
 
@@ -88,7 +90,8 @@ gulp.task("html", function () {
     .pipe(posthtml([
       include()
     ]))
-    .pipe(gulp.dest("build"));
+    .pipe(gulp.dest("build"))
+    .pipe(gulp.dest("docs"));
 });
 
 gulp.task("copy", function () {
@@ -100,7 +103,8 @@ gulp.task("copy", function () {
     ], {
       base: "source"
     })
-    .pipe(gulp.dest("build"));
+    .pipe(gulp.dest("build", "docs"))
+    .pipe(gulp.dest("docs"));
 });
 
 gulp.task("clean", function () {
